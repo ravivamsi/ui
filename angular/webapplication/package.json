@@ -1,0 +1,29 @@
+{
+  "name": "webapplication",
+  "version": "1.0.0",
+  "description": "Angular-Bootstrap Web Application  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+    "prestart": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravivamsi/ui.git"
+  },
+  "keywords": [
+    "angularjs",
+    "bootstrap",
+    "http-server"
+  ],
+  "author": "Vamsi Ravi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravivamsi/ui/issues"
+  },
+  "homepage": "https://github.com/ravivamsi/ui#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
