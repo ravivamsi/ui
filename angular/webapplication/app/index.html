@@ -1,23 +1,45 @@
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vamsi Krishna
-    Ravi</title>
-  <meta name="description" content="This is a simple application for the learning purposes">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css"> -->
-  <!-- <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script> -->
-</head>
-<body>
-  <ul class="menu">
-      <li><a href="#!/firstView">First View</a></li>
-      <li><a href="#!/firstView">Second View</a></li>
-    </ul>
-    <div ng-view></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ID Generator</title>
 
-      <div>Body Goes Here<span app-version></span></div>
-</body>
+    <!-- Bootstrap -->
+    <link href="app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div ng-app="app" ng-controller="app">
+
+    <h1 style="text-align:center">{{myVar}}</h1>
+    <h2>Refresh to get New ID</h2>
+    <h3>Version 1 UUID : {{version1uuid}}</h3>
+    <h3>Version 3 UUID : {{version3uuid}}</h3>
+    <h3>Version 4 UUID : {{version4uuid}}</h3>
+    <h3>Version 5 UUID : {{version5uuid}}</h3>
+    <h3>GUID : {{guid}}</h3>
+
+    <ul class="nav nav-tabs">
+      <li role="presentation" ><a href="#">UUID Version 1</a></li>
+      <li role="presentation"><a href="#">UUID Version 3</a></li>
+      <li role="presentation"><a href="#">UUID Version 4</a></li>
+      <li role="presentation"><a href="#">UUID Version 5</a></li>
+      <li role="presentation"><a href="#">GUID</a></li>
+    </ul>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</div>
+  </body>
 </html>
